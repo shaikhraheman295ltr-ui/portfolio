@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Abdul Raheman Shaikh — Python Developer & Data Analytics enthusiast. Portfolio showcasing projects, skills, and services.">
+  <meta name="keywords" content="Abdul Raheman, portfolio, python developer, data analytics, web developer, Latur">
+  <meta name="author" content="Abdul Raheman Shaikh">
+  <meta property="og:title" content="Abdul Raheman Shaikh — Portfolio">
+  <meta property="og:description"
+    content="Python Developer & Data Analytics enthusiast. Explore my projects and skills.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230a0a0a'/><text x='16' y='22' text-anchor='middle' fill='white' font-size='18' font-family='monospace'>A</text></svg>">
+  <title>Abdul Raheman Shaikh — Portfolio</title>
+  <link rel="stylesheet" href="stayle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:wght@300..800&family=Playfair+Display:wght@400..900&family=Unbounded:wght@200..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script>emailjs.init('YOUR_PUBLIC_KEY');</script>
+</head>
+
+<body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <canvas id="particles-canvas"></canvas>
+  <div id="progress-bar"></div>
+  <button class="theme-toggle-desktop" id="theme-toggle" aria-label="Toggle theme">
+    <i class="fa-solid fa-moon"></i>
+  </button>
+  <div class="mobile-header">
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-header">
+      <span class="mobile-nav-logo">Abdul Raheman</span>
+      <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#home"><i class="fa-regular fa-house"></i> Home</a></li>
+      <li><a href="#about"><i class="fa-regular fa-address-card"></i> About</a></li>
+      <li><a href="#project"><i class="fa-regular fa-folder-open"></i> Projects</a></li>
+      <li><a href="#stats"><i class="fa-solid fa-chart-simple"></i> Stats</a></li>
+      <li><a href="#services"><i class="fa-solid fa-code"></i> Services</a></li>
+      <li><a href="#contact"><i class="fa-regular fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="mobile-nav-social">
+      <a href="https://github.com/shaikhraheman295ltr-ui" target="_blank" aria-label="GitHub"><i
+          class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/shaikh-a-raheman-6015193a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/yolcu__raheman?igsh=dDlhZjl1cWNzZHZv" target="_blank" aria-label="Instagram"><i
+          class="fa-brands fa-instagram"></i></a>
+    </div>
+  </div>
+  <div id="loading-screen">
+    <div class="loading-content">
+      <i class="fa-solid fa-laptop-code fa-5x main-icon hidden"></i>
+
+      <h1 id="loading-text" class="hidden">MY PROFILE</h1>
+
+      <div class="sub-icons">
+        <i class="fa-brands fa-github fa-2x hidden"></i>
+        <i class="fa-solid fa-code fa-2x hidden"></i>
+        <i class="fa-solid fa-user fa-2x hidden"></i>
+      </div>
+
+      <h2 id="designer-text" class="hidden">Designed by Abdul Raheman</h2>
+    </div>
+  </div>
+  <header class="header-list">
+    <div class="div-list ">
+      <div class="header-controls">
+        <button class="theme-toggle" id="theme-toggle-desktop" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+      <ul class="ul-list">
+        <li class="active">
+          <i class="fa-regular fa-house"></i>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <i class="fa-regular fa-address-card"></i>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <i class="fa-regular fa-folder-open"></i>
+          <a href="#project">Projects</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-chart-simple"></i>
+          <a href="#stats">Stats</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-code"></i>
+          <a href="#services">services</a>
+        </li>
+        <li>
+          <i class="fa-regular fa-envelope"></i>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- home -->
+  <section class="home" id="home">
+    <p class="home-p">
+      <span class="home-s">. </span>WELCOME TO MY PORTFOLIO
+    </p>
+    <div class="home-container">
+      <div class="home-section">
+        <div class="info-home">
+          <h1>Hi, I'm Abdul Raheman</h1>
+          <h3>python Developer</h3>
+          <div class="info-p">
+            <p>I create beautiful, functional, and user-centered digital experiences. With </p>
+            <p>my skills in data analytics, I bring ideas to life through </p>
+            <p>clean code and thoughtful design</p>
+          </div>
+          <div class="info-p2">
+            <p><i class="fa-solid fa-location-dot"></i> Based in maharashtra,latur</p>
+            <p><i class="fa-solid fa-briefcase"></i> Available Now</p>
+          </div>
+          <div class="btnn">
+            <button class="btn-home1"><i class="fa-solid fa-arrow-right"></i> Hire Me</button>
+            <button class="btn-home2"><i class="fa-solid fa-download"></i> Download CV</button>
+          </div>
+          <div class="hhr">
+            <hr>
+          </div>
+          <div class="follow">
+            <p class="followw">Follow me:</p>
+            <ul>
+              <li><a href="https://github.com/shaikhraheman295ltr-ui"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://discord.gg/YnNHkEez"><i class="fa-brands fa-discord"></i></a></li>
+              <li><a
+                  href="https://www.linkedin.com/in/shaikh-a-raheman-6015193a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                    class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://www.instagram.com/yolcu__raheman?igsh=dDlhZjl1cWNzZHZv"><i
+                    class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="http://Wa.me/+917709881540"><i class="fa-brands fa-whatsapp"></i></a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <img src="images/1.png" class="parallax" data-speed="0.15" alt="Abdul Raheman">
+    </div>
+  </section>
+  <!-- fine home  -->
+  <section class="about" id="about">
+    <p>ABOUT ME</p>
+    <div class="title">
+      <h1>Building Meaningful</h1>
+      <h1>Digital Experiences</h1>
+    </div>
+    <div class="hrrr">
+      <hr>
+    </div>
+    <div class="about-container">
+      <div class="info-about">
+        <div class="about-info">
+          <p>
+            I am a Computer Science student passionate about coding and problem-solving.
+            <br>I am building strong foundations in programming with a focus on Python and modern technologies.
+            My goal is to grow into a skilled developer and secure a high-impact tech career. <br> logic with creativity
+            to bring ideas to life.
+
+          </p>
+          <p>
+            When I'm not coding, I enjoy learning new technologies, improving my projects, <br> and exploring better
+            ways to make the web faster and more engaging.
+            <br>I believe in continuous learning, attention to detail, and the power of clean, meaningful design
+          </p>
+        </div>
+        <h2>What Drives Me</h2>
+        <div class="card">
+          <div class="c1">
+            <h3><i class="fa-solid fa-code"></i> Languages</h3>
+            <p>HTML, CSS, Python, Excel, C, SQL</p>
+          </div>
+          <div class="c1">
+            <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+            <p>UG bsc in Computer Science</p>
+          </div>
+          <div class="c1">
+            <h3><i class="fa-solid fa-folder-open"></i> Projects</h3>
+            <p>Built more than 5 projects</p>
+          </div>
+        </div>
+      </div>
+      <img src="images/2.png" alt="Abdul Raheman">
+    </div>
+  </section>
+  <section class="stats-section" id="stats">
+    <div class="stats-container">
+      <div class="stat-item">
+        <i class="fa-solid fa-code"></i>
+        <h2><span class="stat-number" data-target="15">0</span>+</h2>
+        <p>Projects Done</p>
+      </div>
+      <div class="stat-item">
+        <i class="fa-solid fa-laptop"></i>
+        <h2><span class="stat-number" data-target="5">0</span>+</h2>
+        <p>Technologies</p>
+      </div>
+      <div class="stat-item">
+        <i class="fa-solid fa-mug-hot"></i>
+        <h2><span class="stat-number" data-target="500">0</span>+</h2>
+        <p>Cups of Coffee</p>
+      </div>
+      <div class="stat-item">
+        <i class="fa-regular fa-face-smile"></i>
+        <h2><span class="stat-number" data-target="100">0</span>%</h2>
+        <p>Dedication</p>
+      </div>
+    </div>
+  </section>
+  <section class="skills-section" id="skills">
+    <p>SKILLS</p>
+    <h1>Technical Proficiency</h1>
+    <hr>
+    <svg style="position:absolute;width:0;height:0;">
+      <defs>
+        <linearGradient id="circle-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#474af0" />
+          <stop offset="100%" stop-color="#8b5cf6" />
+        </linearGradient>
+      </defs>
+    </svg>
+    <div class="skills-progress-container">
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Python</span>
+          <span class="skill-percent" data-target="85">0%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-width="85%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>HTML & CSS</span>
+          <span class="skill-percent" data-target="90">0%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-width="90%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>JavaScript</span>
+          <span class="skill-percent" data-target="70">0%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-width="70%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>SQL</span>
+          <span class="skill-percent" data-target="75">0%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-width="75%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>Excel (Advanced)</span>
+          <span class="skill-percent" data-target="80">0%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-width="80%"></div>
+        </div>
+      </div>
+      <div class="skill-item">
+        <div class="skill-info">
+          <span>C Programming</span>
+          <span class="skill-percent" data-target="65">0%</span>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-fill" data-width="65%"></div>
+        </div>
+      </div>
+    </div>
+    <h2 style="text-align:center;color:#F5F5F0;margin:50px 0 30px;font-weight:600;">Proficiency</h2>
+    <div class="skill-circles-grid"
+      style="display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));gap:30px;max-width:700px;margin:0 auto;width:100%;">
+      <div class="skill-circle-item">
+        <div class="skill-circle">
+          <svg viewBox="0 0 100 100">
+            <circle class="skill-circle-bg" cx="50" cy="50" r="45" />
+            <circle class="skill-circle-fill" data-pct="85" cx="50" cy="50" r="45" />
+          </svg>
+          <span class="skill-circle-text">85%</span>
+        </div>
+        <span class="skill-circle-label">Python</span>
+      </div>
+      <div class="skill-circle-item">
+        <div class="skill-circle">
+          <svg viewBox="0 0 100 100">
+            <circle class="skill-circle-bg" cx="50" cy="50" r="45" />
+            <circle class="skill-circle-fill" data-pct="90" cx="50" cy="50" r="45" />
+          </svg>
+          <span class="skill-circle-text">90%</span>
+        </div>
+        <span class="skill-circle-label">HTML & CSS</span>
+      </div>
+      <div class="skill-circle-item">
+        <div class="skill-circle">
+          <svg viewBox="0 0 100 100">
+            <circle class="skill-circle-bg" cx="50" cy="50" r="45" />
+            <circle class="skill-circle-fill" data-pct="70" cx="50" cy="50" r="45" />
+          </svg>
+          <span class="skill-circle-text">70%</span>
+        </div>
+        <span class="skill-circle-label">JavaScript</span>
+      </div>
+      <div class="skill-circle-item">
+        <div class="skill-circle">
+          <svg viewBox="0 0 100 100">
+            <circle class="skill-circle-bg" cx="50" cy="50" r="45" />
+            <circle class="skill-circle-fill" data-pct="75" cx="50" cy="50" r="45" />
+          </svg>
+          <span class="skill-circle-text">75%</span>
+        </div>
+        <span class="skill-circle-label">SQL</span>
+      </div>
+      <div class="skill-circle-item">
+        <div class="skill-circle">
+          <svg viewBox="0 0 100 100">
+            <circle class="skill-circle-bg" cx="50" cy="50" r="45" />
+            <circle class="skill-circle-fill" data-pct="80" cx="50" cy="50" r="45" />
+          </svg>
+          <span class="skill-circle-text">80%</span>
+        </div>
+        <span class="skill-circle-label">Excel</span>
+      </div>
+      <div class="skill-circle-item">
+        <div class="skill-circle">
+          <svg viewBox="0 0 100 100">
+            <circle class="skill-circle-bg" cx="50" cy="50" r="45" />
+            <circle class="skill-circle-fill" data-pct="65" cx="50" cy="50" r="45" />
+          </svg>
+          <span class="skill-circle-text">65%</span>
+        </div>
+        <span class="skill-circle-label">C</span>
+      </div>
+    </div>
+  </section>
+  <!-- PREMIUM PROJECTS SECTION -->
+  <section class="premium-projects" id="project">
+    <div class="premium-projects-inner">
+      <div class="premium-heading">
+        <h1 class="premium-title">Project</h1>
+      </div>
+      <div class="premium-cards-wrap" id="premium-cards-wrap">
+        <div class="premium-card-sticky" data-index="0">
+          <div class="premium-card" id="pc-0">
+            <div class="premium-card-content">
+              <div class="premium-top-row">
+                <div class="premium-top-left">
+                  <span class="premium-number">01</span>
+                  <div class="premium-meta">
+                    <span class="premium-category">Web App</span>
+                    <span class="premium-name">Kickforge</span>
+                  </div>
+                </div>
+                <a href="https://kickforge-xi.vercel.app" target="_blank" class="premium-live-btn">
+                  Live Project
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.333 12.667L12.667 3.333M12.667 3.333H5.333M12.667 3.333V10.667" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <img src="images/Cleveroad.jpg" alt="Cleveroad" loading="lazy" class="premium-img-single">
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-card-sticky" data-index="1">
+          <div class="premium-card" id="pc-1">
+            <div class="premium-card-content">
+              <div class="premium-top-row">
+                <div class="premium-top-left">
+                  <span class="premium-number">02</span>
+                  <div class="premium-meta">
+                    <span class="premium-category">Dashboard</span>
+                    <span class="premium-name">Weather Forecast</span>
+                  </div>
+                </div>
+                <a href="https://forecast-steel-theta.vercel.app" target="_blank" class="premium-live-btn">
+                  Live Project
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.333 12.667L12.667 3.333M12.667 3.333H5.333M12.667 3.333V10.667" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <img src="images/Weather Forecast Dashboard.jpg" alt="Weather Forecast" loading="lazy"
+                class="premium-img-single">
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-card-sticky" data-index="2">
+          <div class="premium-card" id="pc-2">
+            <div class="premium-card-content">
+              <div class="premium-top-row">
+                <div class="premium-top-left">
+                  <span class="premium-number">03</span>
+                  <div class="premium-meta">
+                    <span class="premium-category">E-Commerce</span>
+                    <span class="premium-name">Watch E-Commerce</span>
+                  </div>
+                </div>
+                <a href="https://tempus-gold.vercel.app" target="_blank" class="premium-live-btn">
+                  Live Project
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.333 12.667L12.667 3.333M12.667 3.333H5.333M12.667 3.333V10.667" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <img src="images/watch e-comrece .jpg" alt="Watch E-Commerce" loading="lazy" class="premium-img-single">
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-card-sticky" data-index="3">
+          <div class="premium-card" id="pc-3">
+            <div class="premium-card-content">
+              <div class="premium-top-row">
+                <div class="premium-top-left">
+                  <span class="premium-number">04</span>
+                  <div class="premium-meta">
+                    <span class="premium-category">Dashboard</span>
+                    <span class="premium-name">Game Dashboard</span>
+                  </div>
+                </div>
+                <a href="https://nexus-dashboard-tr52.vercel.app" target="_blank" class="premium-live-btn">
+                  Live Project
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.333 12.667L12.667 3.333M12.667 3.333H5.333M12.667 3.333V10.667" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <img src="images/Game Dashboard Design.jpg" alt="Game Dashboard" loading="lazy"
+                class="premium-img-single">
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-card-sticky" data-index="4">
+          <div class="premium-card" id="pc-4">
+            <div class="premium-card-content">
+              <div class="premium-top-row">
+                <div class="premium-top-left">
+                  <span class="premium-number">05</span>
+                  <div class="premium-meta">
+                    <span class="premium-category">Web App</span>
+                    <span class="premium-name">Paints Web App</span>
+                  </div>
+                </div>
+                <a href="https://ar-paint-psi.vercel.app" target="_blank" class="premium-live-btn">
+                  Live Project
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.333 12.667L12.667 3.333M12.667 3.333H5.333M12.667 3.333V10.667" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <img src="images/WordPress dashboard design concept.jpg" alt="WordPress Dashboard" loading="lazy"
+                class="premium-img-single">
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-card-sticky" data-index="5">
+          <div class="premium-card" id="pc-5">
+            <div class="premium-card-content">
+              <div class="premium-top-row">
+                <div class="premium-top-left">
+                  <span class="premium-number">06</span>
+                  <div class="premium-meta">
+                    <span class="premium-category">Productivity</span>
+                    <span class="premium-name">Aureon</span>
+                  </div>
+                </div>
+                <a href="https://aureon-hafz4jrou-luffy6.vercel.app" target="_blank" class="premium-live-btn">
+                  Live Project
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.333 12.667L12.667 3.333M12.667 3.333H5.333M12.667 3.333V10.667" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <img src="images/Task manager app.jpg" alt="Task Manager" loading="lazy" class="premium-img-single">
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-card-sticky" data-index="6">
+          <div class="premium-card" id="pc-6">
+            <div class="premium-card-content">
+              <div class="premium-top-row">
+                <div class="premium-top-left">
+                  <span class="premium-number">07</span>
+                  <div class="premium-meta">
+                    <span class="premium-category">Portfolio</span>
+                    <span class="premium-name">Portfolio Site</span>
+                  </div>
+                </div>
+                <a href="#" target="_blank" class="premium-live-btn">
+                  Live Project
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.333 12.667L12.667 3.333M12.667 3.333H5.333M12.667 3.333V10.667" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <img src="images/portfolio .jpg" alt="Portfolio" loading="lazy" class="premium-img-single">
+            </div>
+          </div>
+        </div>
+
+        <div class="premium-card-sticky" data-index="7">
+          <div class="premium-card" id="pc-7">
+            <div class="premium-card-content">
+              <div class="premium-top-row">
+                <div class="premium-top-left">
+                  <span class="premium-number">08</span>
+                  <div class="premium-meta">
+                    <span class="premium-category">News</span>
+                    <span class="premium-name">News Analyzer</span>
+                  </div>
+                </div>
+                <a href="https://news-website-luffy6.vercel.app" target="_blank" class="premium-live-btn">
+                  Live Project
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3.333 12.667L12.667 3.333M12.667 3.333H5.333M12.667 3.333V10.667" stroke="currentColor"
+                      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <img src="images/news analyzer .jpg" alt="News Analyzer" loading="lazy" class="premium-img-single">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <p>SERVICES</p>
+    <h1>Our Features & Services</h1>
+    <hr>
+    <div class="services-container">
+
+      <div class="service-card">
+        <img src="images/web.svg" alt="Web Development">
+        <h3>Data Analytics</h3>
+        <p>Extract meaningful insights from raw data using Python, SQL, and visualization tools to drive informed
+          decisions.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/app.svg" alt="App Development">
+        <h3>Data Management</h3>
+        <p>Organize, store, and maintain data efficiently with structured databases, cleaning, and optimization
+          techniques.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/dm.svg" alt="Digital Marketing">
+        <h3>Python Development</h3>
+        <p>Build scalable scripts, automation tools, and backend solutions using Python with clean and maintainable
+          code.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="images/seo.svg" alt="SEO">
+        <h3>Technical Analysis</h3>
+        <p>Apply analytical thinking to solve complex problems, optimize workflows, and deliver data-driven results.</p>
+      </div>
+
+    </div>
+  </section>
+  <section class="testimonials" id="testimonials">
+    <p>TESTIMONIALS</p>
+    <h1>What People Say</h1>
+    <hr>
+    <div class="testimonials-container">
+      <div class="testimonial-card active">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Abdul has a keen eye for design and writes clean, efficient code. A dedicated problem-solver who delivers
+          quality work."</p>
+        <div class="testimonial-author">
+          <h4>— Peer</h4>
+          <span>Computer Science Department</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Working with Abdul was a great experience. His attention to detail and passion for technology makes him
+          stand out."</p>
+        <div class="testimonial-author">
+          <h4>— Mentor</h4>
+          <span>Project Collaborator</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"A quick learner with strong analytical skills. Abdul brings creativity and logic together to build
+          meaningful solutions."</p>
+        <div class="testimonial-author">
+          <h4>— Colleague</h4>
+          <span>Tech Enthusiast</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <p>CONTACT</p>
+    <h1>Get in Touch with Us</h1>
+    <div class="contact-content">
+      <div class="contact-info slide-in-left">
+        <p>I'm always open to discuss exciting projects and new opportunities. Let's collaborate!</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span>shaikhraheman@gmail.com</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 77098 81540</span>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Maharashtra, Latur</span>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/shaikhraheman295ltr-ui" class="social-link" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/shaikh-a-raheman-6015193a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            class="social-link" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/yolcu__raheman?igsh=dDlhZjl1cWNzZHZv" class="social-link" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form slide-in-right">
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required name="user_name">
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required name="user_email">
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-send">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <h2 class="footer-logo">Abdul Raheman</h2>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="footer-social">
+        <a href="https://github.com/shaikhraheman295ltr-ui" target="_blank" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shaikh-a-raheman-6015193a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/yolcu__raheman?igsh=dDlhZjl1cWNzZHZv" target="_blank"
+          aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Abdul Raheman. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
