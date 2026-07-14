@@ -4,7 +4,7 @@ A premium, dark-themed portfolio website showcasing projects, skills, and servic
 
 ## Live Demo
 
-[View Live](https://your-vercel-url.vercel.app)
+[View Live](https://portofolio3-chi.vercel.app)
 
 ## Features
 
@@ -65,7 +65,7 @@ A premium, dark-themed portfolio website showcasing projects, skills, and servic
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/your-repo.git
+git clone https://github.com/shaikhraheman295ltr-ui/portfolio.git
 
 # Open directly in browser
 open index.html
